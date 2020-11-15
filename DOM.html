@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript DOM [13 exercises with solution] </h2>
+    <div>
+        <div>
+        <p><strong>1. </strong>Here is a sample html file with a submit button. Now modify the style of the paragraph text through javascript code. <br>
+            Sample HTML file :
+            <pre name="code" class="html">&lt;!DOCTYPE html&gt;
+            &lt;html&gt;<br>&lt;head&gt;
+            &lt;meta charset=utf-8 /&gt;
+            &lt;title&gt;JS DOM paragraph style&lt;/title&gt;
+            &lt;/head&gt; 
+            &lt;body&gt;
+            &lt;p id ='text'&gt;JavaScript Exercises - w3resource&lt;/p&gt; 
+            &lt;div&gt;
+            &lt;button id=&quot;jsstyle&quot;
+            onclick=&quot;js_style()&quot;&gt;Style&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </pre>
+            <p>Clicking on the button the font, font size, and color of the paragraph text will be changed.<br>
+        </div>
+        <div>
+            <p><strong>2. </strong>Write a JavaScript function to get the values of First and Last name of the following form. <br>
+                Sample HTML file : </p>
+                <pre name="code" class="html">&lt;!DOCTYPE html&gt;
+                &lt;html&gt;&lt;head&gt;
+                &lt;meta charset=utf-8 /&gt;
+                &lt;title&gt;Return first and last name from a form - w3resource&lt;/title&gt;
+                &lt;/head&gt;&lt;body&gt;
+                &lt;form id=&quot;form1&quot; onsubmit=&quot;getFormvalue()&quot;&gt;
+                First name: &lt;input type=&quot;text&quot; name=&quot;fname&quot; value=&quot;David&quot;&gt;&lt;br&gt;
+                Last name: &lt;input type=&quot;text&quot; name=&quot;lname&quot; value=&quot;Beckham&quot;&gt;&lt;br&gt;
+                &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+                &lt;/form&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </pre>
+                <p>
+        </div>
+        <div>
+            <p><strong>3</strong><strong>. </strong>Write a JavaScript program to set the background color of a paragraph.<br>
+            </a>
+            <p><strong>4. </strong><strong> </strong>Here is a sample html file with a submit button. Write a JavaScript function to get the value of the href, hreflang, rel, target, and type attributes of the specified link. </p>
+            <pre name="code" class="html">&lt;!DOCTYPE html&gt;
+            &lt;html&gt;&lt;head&gt;
+            &lt;meta charset=utf-8 /&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;p&gt;&lt;a id=&quot;w3r&quot; type=&quot;text/html&quot; hreflang=&quot;en-us&quot; rel=&quot;nofollow&quot; target=&quot;_self&quot; href=&quot;https://www.w3resource.com/&quot;&gt;w3resource&lt;/a&gt;&lt;/p&gt;
+            &lt;button onclick=&quot;getAttributes()&quot;&gt;Click here to get  attributes value&lt;/button&gt;
+            &lt;/body&gt;&lt;/html&gt;
+            </pre>
+            <p>
+        </div>
+        <div>
+            <p><strong>5. </strong><strong> </strong>Write a JavaScript function to add rows to a table. <br>
+                Sample HTML file : </p>
+                <pre name="code" class="html">&lt;!DOCTYPE html&gt;
+                &lt;html&gt;&lt;head&gt;<br>&lt;meta charset=utf-8 /&gt;
+                &lt;title&gt;Insert row in a table - w3resource&lt;/title&gt;
+                &lt;/head&gt;&lt;body&gt;
+                &lt;table id=&quot;sampleTable&quot; border=&quot;1&quot;&gt;
+                &lt;tr&gt;&lt;td&gt;Row1 cell1&lt;/td&gt;
+                &lt;td&gt;Row1 cell2&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Row2 cell1&lt;/td&gt;
+                &lt;td&gt;Row2 cell2&lt;/td&gt;&lt;/tr&gt;
+                &lt;/table&gt;&lt;br&gt;
+                &lt;input type=&quot;button&quot; onclick=&quot;insert_Row()&quot; value=&quot;Insert row&quot;&gt; 
+                &lt;/body&gt;&lt;/html&gt;
+                </pre>
+                <p>
+        </div>
+        <div>
+            <p><strong>6. </strong><strong> </strong>Write a JavaScript function that accept row, column, (to identify a particular cell) and a string to update the content of that cell. <br>
+                Sample HTML file : </p>
+                <pre name="code" class="html">&lt;!DOCTYPE html&gt;
+                &lt;html&gt;&lt;head&gt;<br>&lt;meta charset=utf-8 /&gt;
+                &lt;title&gt;Change the content of a cell&lt;/title&gt;
+                &lt;/head&gt;&lt;body&gt;
+                &lt;table id=&quot;myTable&quot; border=&quot;1&quot;&gt;
+                &lt;tr&gt;&lt;td&gt;Row1 cell1&lt;/td&gt;
+                &lt;td&gt;Row1 cell2&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Row2 cell1&lt;/td&gt;
+                &lt;td&gt;Row2 cell2&lt;/td&gt;&lt;/tr&gt;
+                &lt;tr&gt;&lt;td&gt;Row3 cell1&lt;/td&gt;
+                &lt;td&gt;Row3 cell2&lt;/td&gt;&lt;/tr&gt;
+                &lt;/table&gt;&lt;form&gt;
+                &lt;input type=&quot;button&quot; onclick=&quot;changeContent()&quot; value=&quot;Change content&quot;&gt;
+                &lt;/form&gt;&lt;/body&gt;&lt;/html&gt;
+                </pre>
+                <p>
+        </div>
+        <div>
+            <p><strong>7. </strong><strong> </strong>Write a JavaScript function that creates a table, accept row, column numbers from the user, and input row-column number as content (e.g. Row-0 Column-0) of a cell. <br>
+                Sample HTML file : </p>
+                <pre name="code" class="html">&lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;meta charset=utf-8 /&gt;
+                &lt;title&gt;Change the content of a cell&lt;/title&gt;
+                &lt;style type=&quot;text/css&quot;&gt;
+                body {margin: 30px;}
+                &lt;/style&gt;  
+                &lt;/head&gt;&lt;body&gt;
+                &lt;table id=&quot;myTable&quot; border=&quot;1&quot;&gt;
+                &lt;/table&gt;&lt;form&gt;
+                &lt;input type=&quot;button&quot; onclick=&quot;createTable()&quot; value=&quot;Create the table&quot;&gt;
+                &lt;/form&gt;&lt;/body&gt;&lt;/html&gt;
+                </pre>
+                <p>
+        </div>
+        <div>
+            <p><strong>8. </strong><strong> </strong>Write a JavaScript program to remove items from a dropdown list.  <br>
+                Sample HTML file : </p>
+                <pre name="code" class="html">&lt;!DOCTYPE html&gt;
+                &lt;html&gt;&lt;head&gt;
+                &lt;meta charset=utf-8 /&gt;
+                &lt;title&gt;Remove items from a dropdown list&lt;/title&gt;
+                &lt;/head&gt;&lt;body&gt;&lt;form&gt;
+                &lt;select id=&quot;colorSelect&quot;&gt;
+                &lt;option&gt;Red&lt;/option&gt;
+                &lt;option&gt;Green&lt;/option&gt;
+                &lt;option&gt;White&lt;/option&gt;
+                &lt;option&gt;Black&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;input type=&quot;button&quot; onclick=&quot;removecolor()&quot; value=&quot;Select and Remove&quot;&gt;<br>&lt;/form&gt;&lt;/body&gt;&lt;/html&gt;
+                </pre>
+                <p>
+        </div>
+        <div>
+            <p><strong>9. </strong><strong> </strong>Write a JavaScript program to count and display the items of a dropdown list, in an alert window. <br>
+                Sample HTML file : </p>
+                <pre name="code" class="html">&lt;!DOCTYPE html&gt;
+                &lt;html&gt;&lt;head&gt;
+                &lt;meta charset=utf-8 /&gt;
+                &lt;style type=&quot;text/css&quot;&gt;
+                body {margin: 30px;}
+                &lt;/style&gt;   
+                &lt;title&gt;Count and display items of a dropdown list - w3resource&lt;/title&gt;
+                &lt;/head&gt;&lt;body&gt;&lt;form&gt;
+                Select your favorite Color :
+                &lt;select id=&quot;mySelect&quot;&gt;
+                &lt;option&gt;Red&lt;/option&gt;
+                &lt;option&gt;Green&lt;/option&gt;
+                &lt;option&gt;Blue&lt;/option&gt;
+                &lt;option&gt;White&lt;/option&gt;
+                &lt;/select&gt;
+                &lt;input type=&quot;button&quot; onclick=&quot;getOptions()&quot; value=&quot;Count and Output all items&quot;&gt;
+                &lt;/form&gt;&lt;/body&gt;&lt;/html&gt;
+                </pre>
+                <p>
+        </div>
+        <div>
+            <p><strong>10. </strong><strong> </strong>Write a JavaScript program to calculate the volume of a sphere. <br>
+                Sample Output of the form : </p>
+                <p><img src='https://www.w3resource.com/w3r_images/volume-sphere-html-form.png' alt="volume sphere html form"></p>
+                <p>
+        </div>
+        <div>
+            <p><strong>11. </strong><strong> </strong>Write a JavaScript program to display a random image (clicking on a button) from the following list.  <br>
+                <i>Sample Image information</i> : </p>
+                <p>&quot;http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg&quot;,
+                width: &quot;240&quot;,
+                height: &quot;160&quot;<br>
+                &quot;http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg&quot;,
+                width: &quot;320&quot;,
+                height: &quot;195&quot;<br>
+                &quot;http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg&quot;,
+                width: &quot;500&quot;,
+                height: &quot;343&quot;</p>
+                <p>
+        </div>
+        <div>
+            <p><strong>12. </strong><strong> </strong>Write a JavaScript program to highlight the bold words of the following paragraph, on mouse over a certain link. <br>
+                <i>Sample link and text </i>:<br>
+                [<a href="#" onMouseOver="highlight()" onMouseOut="unHighlight()">On mouse over here bold words of the following paragraph will be highlighted</a>]<br>
+                <strong>We</strong> have just started <strong>this</strong> section for the users (<strong>beginner</strong> to intermediate) who <strong>want</strong> to work with <strong>various</strong> JavaScript <strong>problems</strong> and write scripts online to <strong>test</strong> their JavaScript <strong>skill</strong>.<br>       
+        </div>
+        <div>
+            <p><strong>13. </strong><strong> </strong>Write a JavaScript program to get the width and height of the window (any time the window is resized). <br>
+        </div>
+    </div>
+</body>
+</html>

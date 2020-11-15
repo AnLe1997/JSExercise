@@ -1,0 +1,29 @@
+body{
+    padding: 0 40px;
+}
+h1{
+    color: red;
+    border-bottom: 3px solid black;
+}
+strong{
+    font-size: 30px;
+}
+p{
+    font-size: larger;
+}
+em{
+    color: blue;
+}
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}  
+tr:nth-child(even){
+    background-color: #dddddd;
+}

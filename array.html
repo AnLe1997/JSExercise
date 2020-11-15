@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="heading" ID='TOP'>JavaScript array [42 exercises with solution] </h2>
+    <div>
+        <div>
+            <p><strong>1. </strong>Write a JavaScript function to check whether an `input` is an array or not. <strong> </strong><br>
+                <em>Test Data</em> :<br>
+                console.log(is_array('w3resource')); <br>
+                console.log(is_array([1, 2, 4, 0]));<br>
+                false<br>
+                true<br>
+                </p>
+        </div>
+        <div>
+            <p><strong>2. </strong>Write a JavaScript function to clone an array. <br>
+                <em>Test Data</em> :<br>
+                console.log(array_Clone([1, 2, 4, 0])); <br>
+                console.log(array_Clone([1, 2, [4, 0]]));<br>
+                [1, 2, 4, 0] <br>
+                [1, 2, [4, 0]]<br>
+                </p>
+        </div>
+        <div>
+            <p><strong>3.</strong> Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array. <br>
+                <i>Test Data </i>: <br>
+                console.log(first([7, 9, 0, -2])); <br>
+                console.log(first([],3));<br>
+                console.log(first([7, 9, 0, -2],3));<br>
+                console.log(first([7, 9, 0, -2],6));<br>
+                console.log(first([7, 9, 0, -2],-3));<br>
+                <em>Expected Output </em>: <br>
+                7<br>
+                []
+                <br>
+                [7, 9, 0]
+                <br>
+                [7, 9, 0, -2]
+                <br>
+                []
+                <br>
+                </p>
+        </div>
+        <div>
+            <p><strong>4.</strong> Write a JavaScript function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of the array. <br>
+                <i>Test Data </i>: <br>
+                console.log(last([7, 9, 0, -2])); <br>
+                console.log(last([7, 9, 0, -2],3)); <br>
+                console.log(last([7, 9, 0, -2],6));<br>
+                <em>Expected Output </em>: <br>
+                -2 <br>
+                [9, 0, -2] <br>
+                [7, 9, 0, -2]<br>
+                </p>
+        </div>
+        <div>
+            <p><strong>5.</strong> Write a simple JavaScript program to join all elements of the following array into a string. <br>
+                <i>Sample array </i>: myColor = [&quot;Red&quot;, &quot;Green&quot;, &quot;White&quot;, &quot;Black&quot;];<br>
+                <em>Expected Output </em>: <br>
+                &quot;Red,Green,White,Black&quot;<br>
+                &quot;Red,Green,White,Black&quot;<br>
+                &quot;Red+Green+White+Black&quot;<br>
+                </p>
+        </div>
+        <div>
+            <p><strong>6.</strong> Write a JavaScript program which accept a number as input and insert dashes (-) between each two even numbers. For example if you accept 025468 the output should be 0-254-6-8. <br>
+                </p>
+        </div>
+        <div>
+            <p><strong>7.</strong> Write a JavaScript program to sort the items of an array. <br>
+                <i>Sample array</i> : var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ];<br>
+                <i>Sample Output</i> : -4,-3,1,2,3,5,6,7,8<br>
+                <br>
+                <br>
+        </div>
+        <div>
+            <strong>8.</strong> Write a JavaScript program to find the most frequent item of an array. <br>
+        <i>Sample array</i> : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];<br>
+        <i>Sample Output</i> : a ( 5 times ) <br>
+        </p>
+        </div>
+        <div>
+            <p><strong>9.</strong> Write a JavaScript program which accept a string as input and swap the case of each character. For example if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'. <br>
+                </p>
+        </div>
+        <div>
+            <p><strong>10.</strong> Write a JavaScript program which prints the elements of the following array. <br>
+                Note : Use nested for loops.<br>
+                Sample array : var a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];<br>
+                <i>Sample Output</i> : <br>
+                &quot;row 0&quot; <br>
+                &quot; 1&quot; <br>
+                &quot; 2&quot; <br>
+                &quot; 1&quot;<br>
+                &quot; 24&quot;<br>
+                &quot;row 1&quot; <br>
+                ------<br>
+                ------<br>
+                </span></p>
+        </div>
+        <div>
+            <p><strong>11.</strong> Write a JavaScript program to find the sum of squares of a numeric vector. <br>
+                </p>
+        </div>
+        <div>
+            <p><strong>12.</strong> Write a JavaScript program to compute the sum and product of an array of integers. <br>
+                </p>
+        </div>
+        <div>
+            <p><strong>13.</strong> Write a JavaScript program to add items in an blank array and display the items. <br>
+                <i>Sample Screen</i> : <br>
+                <img src='https://www.w3resource.com/w3r_images/add-items-in-array.png' alt="add elements in an blank array" style="max-width:100%;display:block;height:auto"><br>
+                </p>
+        </div>
+        <div>
+            <p><strong>14.</strong> Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity). <br>
+                </p>
+        </div>
+        <div>
+            <p><strong>15.</strong> We have the following arrays : <br>
+                color = [&quot;Blue &quot;, &quot;Green&quot;, &quot;Red&quot;, &quot;Orange&quot;, &quot;Violet&quot;, &quot;Indigo&quot;, &quot;Yellow &quot;];<br>
+                o = [&quot;th&quot;,&quot;st&quot;,&quot;nd&quot;,&quot;rd&quot;]<br>
+                Write a JavaScript program to display the colors in the following way :<br>
+                &quot;1st choice is Blue .&quot;<br>
+                &quot;2nd choice is Green.&quot;<br>
+                &quot;3rd choice is Red.&quot;<br>
+                - - - - - - - - - - - - -<br>
+                Note : Use ordinal numbers to tell their position.<br>
+        </div>
+        <div>
+            </p>
+        <p><strong>16.</strong> Find the leap years in a given range of years. <br>
+        </p>
+        </div>
+        <div>
+            <p><strong>17.</strong> Write a JavaScript program to shuffle an array. <br>
+                </p>
+        </div>
+        <div>
+            <p><strong>18.</strong> Write a JavaScript program to perform a binary search. <br>
+                Note : A binary search or half-interval search algorithm finds the position of a specified input value within an array sorted by key value. <br>
+                <span style="clear: both">Sample array : </span><br>
+                var items = [1, 2, 3, 4, 5, 7, 8, 9];<br>
+                <span style="clear: both">Expected Output : </span><br>
+                console.log(binary_Search(items, 1)); //0 <br>
+                console.log(binary_Search(items, 5)); //4<br>
+                </p>
+        </div>
+        <div>
+            <p><strong>19.</strong> There are two arrays with individual values, write a JavaScript program to compute the sum of each individual index value from the given arrays. <br>
+                <span style="clear: both">Sample array : </span><br>
+                array1 = [1,0,2,3,4];<br>
+                array2 = [3,5,6,7,8,13];<br>
+                <span style="clear: both">Expected Output : </span><br>
+                [4, 5, 8, 10, 12, 13] <br>
+                </p>
+        </div>
+        <div>
+            <p><strong>20.</strong> Write a JavaScript program to find duplicate values in a JavaScript array. <strong> </strong><br>
+                </p>
+        </div>
+        <div>
+            <p><strong>21.</strong> Write a JavaScript program to </span>flatten a nested (any depth) array. If you pass shallow, the array will only be flattened a single level. <br>
+                Sample Data :<br>
+                console.log(flatten([1, [2], [3, [[4]]],[5,6]])); <br>
+                [1, 2, 3, 4, 5, 6]<br>
+                console.log(flatten([1, [2], [3, [[4]]],[5,6]], true)); <br>
+                [1, 2, 3, [[4]], 5, 6]<br>
+                </p>
+        </div>
+        <div>
+            <p><strong>22.</strong> Write a JavaScript program to </span>compute the union of two arrays. <br>
+                Sample Data :<br>
+                console.log(union([1, 2, 3], [100, 2, 1, 10]));<br>
+                [1, 2, 3, 10, 100]<br>
+                </p>
+        </div>
+        <div>
+            <p><strong>23.</strong> Write a JavaScript function to find the difference of two arrays. <em><br>
+                Test Data</em> :<br>
+                console.log(difference([1, 2, 3], [100, 2, 1, 10])); <br>
+                [&quot;3&quot;, &quot;10&quot;, &quot;100&quot;]<br>
+                console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5,6]])); <br>
+                [&quot;6&quot;]<br>
+                console.log(difference([1, 2, 3], [100, 2, 1, 10]));<br>
+                [&quot;3&quot;, &quot;10&quot;, &quot;100&quot;] <br>
+                </p>
+        </div>
+        <div>
+            <p><strong>24.</strong> Write a JavaScript function to remove. 'null', '0', '&quot;&quot;', 'false', 'undefined' and 'NaN' values from an array. <br>
+                Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null]<br>
+                Expected result :
+                [15, -22, 47]<br>
+                </p>
+        </div>
+        <div>
+            <p><strong>25.</strong> Write a JavaScript function to sort the following array of objects by title value. <br>
+                Sample object :</p>
+                <pre>var library = [ 
+                { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
+                { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
+                { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
+                ];
+                </pre>
+                <p>Expected result : </p>
+                <pre class="output">[[object Object] {
+                author: "Suzanne Collins",
+                libraryID: 3245,
+                title:"Mockingjay:The Final Book of The Hunger Games"
+                }, [object Object] {
+                author: "Bill Gates",
+                libraryID: 1254,
+                title: "The Road Ahead"
+                }, [object Object] {
+                author: "Steve Jobs",
+                libraryID: 4264,
+                title: "Walter Isaacson"
+                }]
+                </pre>
+                <p><br>
+                </p>
+        </div>
+        <div>
+            <p><strong>26.</strong> Write a JavaScript program to find a pair of elements (indices of the two numbers) from an given array whose sum equals a specific target number. </p>
+            <p>Input: numbers= [10,20,10,40,50,60,70], target=50<br>
+            Output: 2, 3</p>
+            <p></p>
+        </div>
+        <div>
+            <p><strong>27. </strong> Write a JavaScript function to retrieve the value of a given property from all elements in an array. <br>
+                Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null]<br>
+                Expected result :
+                [15, -22, 47]<br>
+                </p>
+        </div>
+        <div>
+            <p><strong>28.</strong> Write a JavaScript function to find the longest common starting substring in a set of strings.</p>
+            <p>Sample array : console.log(longest_common_starting_substring(['go', 'google']));<br>
+            Expected result :
+            "go"</p>
+            <p></p>
+        </div>
+        <div>
+            <p><strong>29. </strong>Write a JavaScript function to fill an array with values (numeric, string with one character) on supplied bounds.</p>
+            <p>Test Data : <br>
+            console.log(num_string_range('a', &quot;z&quot;, 2));<br>
+            [&quot;a&quot;, &quot;c&quot;, &quot;e&quot;, &quot;g&quot;, &quot;i&quot;, &quot;k&quot;, &quot;m&quot;, &quot;o&quot;, &quot;q&quot;, &quot;s&quot;, &quot;u&quot;, &quot;w&quot;, &quot;y&quot;]</p>
+            <p><br>
+        </div>
+        <div>
+            <p><strong>30. </strong>Write a JavaScript function to merge two arrays and removes all duplicates elements. </p>
+            <p>Test data :<br>
+            var array1 = [1, 2, 3]; <br>
+            var array2 = [2, 30, 1]; <br>
+            console.log(merge_array(array1, array2));<br>
+            [3, 2, 30, 1]</p>
+            <p></p>
+        </div>
+        <div>
+            <p><strong>31. </strong>Write a JavaScript function to remove a specific element from an array. </p>
+            <p>Test data :<br>
+            console.log(remove_array_element([2, 5, 9, 6], 5));<br>
+            [2, 9, 6]<br>
+            </p>
+        </div>
+        <div>
+            <p><strong>32. </strong>Write a JavaScript function to find an array contains a specific element. </p>
+            <p>Test data :<br>
+            arr = [2, 5, 9, 6];<br>
+            console.log(contains(arr, 5));<br>
+            [True]<br>
+            </p>
+        </div>
+        <div>
+            <p><strong>33. </strong>Write a JavaScript script to empty an array keeping the original. </p>
+            <p>.</p><p><strong>34. </strong>Write a JavaScript function to get nth largest element from an unsorted array. </p>
+            <p>Test Data :<br>
+            console.log(nthlargest([ 43, 56, 23, 89, 88, 90, 99, 652], 4));<br>
+            89</p>
+        </div>
+        <div>
+            <p></p>
+        </div>
+        <div>
+            <p><strong>35. </strong>Write a JavaScript function to get a random item from an array. </p>
+            <p></p>
+        </div>
+        <div>
+            <p><strong>36. </strong>Write a JavaScript function to create a specified number of elements with pre-filled numeric value array. </p>
+            <p>Test Data :<br>
+            console.log(array_filled(6, 0)); <br>
+            [0, 0, 0, 0, 0, 0]<br>
+            console.log(array_filled(4, 11));<br>
+            [11, 11, 11, 11]</p>
+            <p></p>
+        </div>
+        <div>
+            <p><strong>37. </strong>Write a JavaScript function to create a specified number of elements with pre-filled string value array. </p>
+            <p>Test Data :<br>
+            console.log(array_filled(3, 'default value')); <br>
+            [&quot;default value&quot;, &quot;default value&quot;, &quot;default value&quot;]<br>
+            console.log(array_filled(4, 'password'));<br>
+            [&quot;password&quot;, &quot;password&quot;, &quot;password&quot;, &quot;password&quot;]<br>
+            </p>
+        </div>
+        <div>
+            <p><strong>38. </strong>Write a JavaScript function to move an array element from one position to another. </p>
+            <p>Test Data :<br>
+            console.log(move([10, 20, 30, 40, 50], 0, 2));<br>
+            [20, 30, 10, 40, 50]<br>
+            console.log(move([10, 20, 30, 40, 50], -1, -2));<br>
+            [10, 20, 30, 50, 40]<br>
+            </p>
+        </div>
+        <div>
+            <p><strong>39. </strong>Write a JavaScript function to filter false, null, 0 and blank values from an array. </p>
+            <p><em>Test Data</em> :<br>
+            console.log(filter_array_values([58, '', 'abcd', true, null, false, 0]));<br>
+            [58, &quot;abcd&quot;, true]<br>
+            </p>
+        </div>
+        <div>
+            <p><strong>40. </strong> Write a JavaScript function to generate an array of specified length, filled with integer numbers, increase by one from starting position. </p>
+            <p><em>Test Data</em> :<br>
+            console.log(array_range(1, 4)); <br>
+            [1, 2, 3, 4]<br>
+            console.log(array_range(-6, 4));<br>
+            [-6, -5, -4, -3]<br>
+            </p>
+        </div>
+        <div>
+            <p><strong>41. </strong> Write a JavaScript function to generate an array between two integers of 1 step length. </p>
+            <p><em>Test Data</em> :<br>
+            console.log(rangeBetwee(4, 7)); <br>
+            [4, 5, 6, 7]<br>
+            console.log(rangeBetwee(-4, 7));<br>
+            [-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7]<br>
+            </p>
+        </div>
+        <div>
+            <p><strong>42. </strong> Write a JavaScript function to find the unique elements from two arrays. </p>
+            <p><em>Test Data</em> :<br>
+            console.log(difference([1, 2, 3], [100, 2, 1, 10]));<br>
+            [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;10&quot;, &quot;100&quot;]<br>
+            console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]],[5,6]])); <br>
+            [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;]<br>
+            console.log(difference([1, 2, 3], [100, 2, 1, 10])); <br>
+            [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;10&quot;, &quot;100&quot;]<br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
